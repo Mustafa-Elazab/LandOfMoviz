@@ -25,7 +25,8 @@ Table of Contents
 The app follows the Clean Architecture and Onion Architecture patterns. The Clean Architecture separates the application into layers, such as domain, data, and presentation. The Onion Architecture focuses on the flow of data between these layers, ensuring that the application remains loosely coupled.
 
 The app uses coroutines for asynchronous programming, ensuring that the UI remains responsive while data is being loaded from the network or database.
-Libraries
+
+# Libraries
 
 The app uses the following libraries:
 
