@@ -33,6 +33,21 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController = navHostFragment.navController
 
+
+//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+//        val inflater = navHostFragment.navController.navInflater
+//        val graph = inflater.inflate(R.navigation.nav_graph)
+//
+//        if (isTrue){
+//            graph.setStartDestination(R.id.homeFragment)
+//        }else {
+//            graph.setStartDestination(R.id.homeFragment)
+//        }
+//
+//        val navController = navHostFragment.navController
+//        navController.setGraph(graph, intent.extras)
+
+
         binding.bottomNavBar.setupWithNavController(navController)
 
         if (getIsFirstLaunch()) showAlertDialog()

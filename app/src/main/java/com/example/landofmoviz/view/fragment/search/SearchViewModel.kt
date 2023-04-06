@@ -97,6 +97,7 @@ class SearchViewModel @Inject constructor(private val getSearchResults: GetSearc
         _uiState.value = UiState.loadingState(isInitial)
         isQueryChanged = false
 
+
         when (type as MediaType) {
             MediaType.MOVIE -> pageMovie++
             MediaType.TV -> pageTv++
